@@ -6,11 +6,14 @@ body {
   
   textarea {
     background: transparent;
-    border: none;
     resize: none;
-    color: #000000;
-    border-left: 1px solid black;
-    padding: 10px;
+    color: #de10ed;
+    border: 2px solid lime;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
   }
   
   .jumbotron {
@@ -34,12 +37,13 @@ body {
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;
+    margin-bottom: 1rem;
   }
   
   .hour {
     background-color: #ffffff;
     color: #000000;
-    border-top: 1px dashed #000000;
+    border: 1px dashed #000000;
   }
   
   .past {
