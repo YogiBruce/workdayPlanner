@@ -27,8 +27,8 @@ $('.time-slot').each(function(){
       }
 });
 
-//WHEN SAVE BUTTON IS CLICKED A LOCAL STORAGE ITEM IS CREATED FOR EACH TIME SLOT
-// WITH VALUE FOR HOUR OF DAY AND USER INPUT FROM TEXT AREA
+//WHEN SAVE BUTTON IS CLICKED A LOCAL STORAGE ITEM IS CREATED FOR EACH 
+// TIME SLOT WITH CONTAINING HOUR OF DAY AND USER INPUT FROM TEXT AREA
 $(".saveBtn").click(function (event) {
     event.preventDefault();
     var time = $(this).parent().attr("id")
