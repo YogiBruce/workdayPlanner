@@ -26,9 +26,6 @@ $('.time-slot').each(function(){
       }
 });
 
-function refreshTime(){
-  
-}
 //WHEN SAVE BUTTON IS CLICKED A LOCAL STORAGE ITEM IS CREATED FOR EACH 
 // TIME SLOT WITH CONTAINING HOUR OF DAY AND USER INPUT FROM TEXT AREA
 $(".saveBtn").click(function (event) {
