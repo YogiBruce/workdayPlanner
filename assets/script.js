@@ -2,7 +2,7 @@
 const today = moment();
 $('#currentDay').text(today.format('MMMM Do YYYY'));
 $('#currentTime').text(today.format('h:mm a'))
-let currentHour = moment().format("HH");
+let currentHour = today.format("HH");
 
 
 //WHEN BUTTON IS CLICKED, SCHEDULE IS CLEARED
@@ -14,7 +14,7 @@ $('#clearFieldsBtn').click(function(event){
 
 //EACH TIME SLOT IS COMPARED TO CURRENT TIME AND COLOR PROPERTY IS SET
 $('.time-slot').each(function(){
-    var timeCheck = $(this).attr("id");
+    let timeCheck = $(this).attr("id");
 
     if (currentHour === timeCheck) {
         $(this).addClass("present");
@@ -31,8 +31,8 @@ $('.time-slot').each(function(){
 // TIME SLOT WITH CONTAINING HOUR OF DAY AND USER INPUT FROM TEXT AREA
 $(".saveBtn").click(function (event) {
     event.preventDefault();
-    var time = $(this).parent().attr("id")
-    var value = $(this).siblings(".calendar-item").val();
+    let time = $(this).parent().attr("id")
+    let value = $(this).siblings(".calendar-item").val();
     localStorage.setItem(time, value);
 });
 
