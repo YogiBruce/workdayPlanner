@@ -19,17 +19,44 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/style.css" />
-    <title>Work Day Scheduler</title>
+    <title>Work Day Planner</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
+      <h1 class="display-3">Work Day Planner</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+    <div class="row">
+        <div class="time-block hour col-2" id="7">7am</div>
+        <div class="time-slot col-8">
+            <textarea
+            class="calendar-item"
+            placeholder="________"
+            row="2"
+            cols="50"
+            ></textarea>
+        </div>
+        <div class="saveBtn col-2">
+            <button id="7am">Save</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="time-block hour col-2" id="8">8am</div>
+        <div class="time-slot col-8">
+            <textarea
+            class="calendar-item"
+            placeholder="________"
+            row="2"
+            cols="50"
+            ></textarea>
+        </div>
+        <div class="saveBtn col-2">
+            <button id="8am">Save</button>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
